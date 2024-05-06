@@ -185,6 +185,7 @@
             this.Name = "FormSignin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.CustomtPanel1.ResumeLayout(false);
             this.CustomtPanel1.PerformLayout();
             this.ResumeLayout(false);

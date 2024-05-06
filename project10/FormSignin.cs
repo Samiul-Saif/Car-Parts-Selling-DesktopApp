@@ -52,7 +52,7 @@ namespace project10
                         }
                         else if (userType == "User")
                         {
-                            Form3 f3 = new Form3();
+                            FormManager f3 = new FormManager();
                             f3.Show();
                             this.Hide();
                         }

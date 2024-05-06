@@ -55,14 +55,14 @@ namespace project10
         private void deleteUserButton_Click(object sender, EventArgs e)
         {
             bodyPanel.Controls.Clear();
-            DeleteUsersUC dltUserUC = new DeleteUsersUC();
+            DeleteProductsUC dltUserUC = new DeleteProductsUC();
             bodyPanel.Controls.Add(dltUserUC);
         }
 
         private void updateUserButton_Click(object sender, EventArgs e)
         {
             bodyPanel.Controls.Clear();
-            UpdateUsersUC updateUsersUC = new UpdateUsersUC();
+            UpdateProductsUC updateUsersUC = new UpdateProductsUC();
             bodyPanel.Controls.Add(updateUsersUC);
         }
 
@@ -70,7 +70,7 @@ namespace project10
         {
           
             bodyPanel.Controls.Clear();
-            AllUsersUC allUserUC = new AllUsersUC();
+            AllProductsUC allUserUC = new AllProductsUC();
             bodyPanel.Controls.Add(allUserUC);
         }
     }
