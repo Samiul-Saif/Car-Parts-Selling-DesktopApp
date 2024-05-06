@@ -22,59 +22,66 @@ namespace project10
 
         }
 
-        private void buttonUser_Click(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            bodyPanel.Controls.Clear();
-            AddProductUC f4 = new AddProductUC();
-
-            bodyPanel.Controls.Add(f4);
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void logoutButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            FormSignin loginForm = new FormSignin();
-            loginForm.Show();
-        }
-
-        private void allProductButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void deleteUserButton_Click(object sender, EventArgs e)
-        {
-            bodyPanel.Controls.Clear();
-            DeleteProductsUC dltUserUC = new DeleteProductsUC();
-            bodyPanel.Controls.Add(dltUserUC);
-        }
-
-        private void updateUserButton_Click(object sender, EventArgs e)
-        {
-            bodyPanel.Controls.Clear();
-            UpdateProductsUC updateUsersUC = new UpdateProductsUC();
-            bodyPanel.Controls.Add(updateUsersUC);
-        }
-
-        private void allUserButton_Click(object sender, EventArgs e)
-        {
-          
-            bodyPanel.Controls.Clear();
-            AllProductsUC allUserUC = new AllProductsUC();
-            bodyPanel.Controls.Add(allUserUC);
-        }
 
         private void clearcartButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cartViewButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BrakingSystemButton_Click(object sender, EventArgs e)
+        {
+            bodyPanel.Controls.Clear();
+            BrakingSystem brakingSystem = new BrakingSystem();
+            bodyPanel.Controls.Add(brakingSystem);
+        }
+
+        private void EnginePartsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LightingSystemButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpgradesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CarCareButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void interiorButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bodyPartsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accessoriesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wheelsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OthersButton_Click(object sender, EventArgs e)
         {
 
         }

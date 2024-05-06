@@ -70,6 +70,15 @@
     <Compile Include="AllUsersUC.Designer.cs">
       <DependentUpon>AllUsersUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="BrakingSystem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrakingSystem.Designer.cs">
+      <DependentUpon>BrakingSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DeleteProductsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUsersUC.resx">
       <DependentUpon>AllUsersUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrakingSystem.resx">
+      <DependentUpon>BrakingSystem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteProductsUC.resx">
       <DependentUpon>DeleteProductsUC.cs</DependentUpon>
@@ -283,6 +295,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car light.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

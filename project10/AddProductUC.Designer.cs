@@ -137,7 +137,7 @@
             "Braking System",
             "Engine Parts",
             "Lighting System",
-            "Engine Parts",
+            "Upgrades",
             "Car Care",
             "Interior Accessories",
             "Body Parts",
