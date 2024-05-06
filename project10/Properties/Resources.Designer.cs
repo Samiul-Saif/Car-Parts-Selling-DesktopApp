@@ -93,6 +93,16 @@ namespace project10.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_cart {
+            get {
+                object obj = ResourceManager.GetObject("add-cart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_image_icon_png_4 {
             get {
                 object obj = ResourceManager.GetObject("add-image-icon-png-4", resourceCulture);

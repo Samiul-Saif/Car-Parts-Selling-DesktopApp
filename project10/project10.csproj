@@ -299,5 +299,8 @@
   <ItemGroup>
     <None Include="Resources\car light.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-cart.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

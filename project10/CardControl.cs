@@ -10,7 +10,12 @@ namespace project10
         private Guna2HtmlLabel productNameLabel;
         private Guna2HtmlLabel priceLabel;
         private Guna2PictureBox productPictureBox;
-        private bool isSelected = false;
+        public bool isSelected = false;
+
+        public int ProductID { get; set; }
+        public int AvailableQuantity { get; set; }
+        public string Brand { get; set; }
+        public string Category { get; set; }
 
         public string ProductName
         {
@@ -21,7 +26,7 @@ namespace project10
         public decimal Price
         {
             get { return Convert.ToDecimal(priceLabel.Text); }
-            set { priceLabel.Text = value.ToString("C"); }
+            set { priceLabel.Text = value.ToString(); }
         }
 
         public Image Image
@@ -69,7 +74,6 @@ namespace project10
             this.priceLabel.Name = "priceLabel";
             this.priceLabel.Size = new Size(46, 22);
             this.priceLabel.TabIndex = 15;
-            this.priceLabel.Text = "Price";
             this.priceLabel.MouseEnter += CardControl_MouseEnter;
             this.priceLabel.MouseLeave += CardControl_MouseLeave;
             this.priceLabel.Click += CardControl_Click;
@@ -89,9 +93,10 @@ namespace project10
             // 
             // CardControl
             // 
-            this.BackColor = Color.Black;
+            this.BackColor = Color.Aquamarine;
             this.Margin = new Padding(10);
-            
+            this.BorderRadius = 10;
+
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.productNameLabel);
             this.Controls.Add(this.productPictureBox);
@@ -111,7 +116,6 @@ namespace project10
             {
                 this.BorderColor = Color.GreenYellow;
                 this.BorderThickness = 5;
-
             }
         }
 
@@ -120,22 +124,23 @@ namespace project10
             if (!isSelected)
             {
                 this.BorderThickness = 0;
-
             }
         }
+
+        private static CardControl selectedCard = null;
 
         private void CardControl_Click(object sender, EventArgs e)
         {
-            isSelected = !isSelected;
-            if (isSelected)
+            
+            if (selectedCard != null)
             {
-                this.BorderThickness = 5;
+                selectedCard.isSelected = false;
+                selectedCard.BorderThickness = 0;
             }
-            else
-            {
-                this.BorderThickness = 0;
-            }
-        }
 
+            isSelected = true;
+            this.BorderThickness = 5;
+            selectedCard = this;
+        }
     }
 }
