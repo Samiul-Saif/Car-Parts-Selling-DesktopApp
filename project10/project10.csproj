@@ -76,6 +76,12 @@
     <Compile Include="DeleteProductsUC.Designer.cs">
       <DependentUpon>DeleteProductsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSalesMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesMan.Designer.cs">
+      <DependentUpon>FormSalesMan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteProductsUC.resx">
       <DependentUpon>DeleteProductsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesMan.resx">
+      <DependentUpon>FormSalesMan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManager.resx">
       <DependentUpon>FormManager.cs</DependentUpon>
