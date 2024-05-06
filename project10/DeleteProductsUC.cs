@@ -19,8 +19,11 @@ namespace project10
 
             dataGridView1.DataSource = productData;
 
-            // Set DataGridView auto size mode
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.RowTemplate.Height = 70;
+
+            DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dataGridView1.Columns["Image"];
+            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            imageColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
         }
 
         private DataTable GetProductDataFromDatabase()

@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.allProductButton = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.deleteUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.updateUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.allUserButton = new Guna.UI2.WinForms.Guna2Button();
             this.addUserPanel = new Guna.UI2.WinForms.Guna2Button();
+            this.logoutButton = new Guna.UI2.WinForms.Guna2Button();
             this.bodyPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.userNameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.logoutButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +46,6 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.guna2Panel1.Controls.Add(this.allProductButton);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.deleteUserButton);
             this.guna2Panel1.Controls.Add(this.updateUserButton);
@@ -56,30 +54,11 @@
             this.guna2Panel1.Controls.Add(this.logoutButton);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Size = new System.Drawing.Size(183, 631);
             this.guna2Panel1.TabIndex = 6;
-            // 
-            // allProductButton
-            // 
-            this.allProductButton.BackColor = System.Drawing.Color.Transparent;
-            this.allProductButton.BorderRadius = 5;
-            this.allProductButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.allProductButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.allProductButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.allProductButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.allProductButton.FillColor = System.Drawing.Color.CadetBlue;
-            this.allProductButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.allProductButton.ForeColor = System.Drawing.Color.White;
-            this.allProductButton.ImageSize = new System.Drawing.Size(32, 32);
-            this.allProductButton.Location = new System.Drawing.Point(3, 413);
-            this.allProductButton.Name = "allProductButton";
-            this.allProductButton.Size = new System.Drawing.Size(178, 58);
-            this.allProductButton.TabIndex = 13;
-            this.allProductButton.Text = "All Products";
-            this.allProductButton.Click += new System.EventHandler(this.allProductButton_Click);
             // 
             // label3
             // 
@@ -169,12 +148,31 @@
             this.addUserPanel.Text = "Add User";
             this.addUserPanel.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // logoutButton
+            // 
+            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
+            this.logoutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.logoutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.logoutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.logoutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.logoutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.logoutButton.FillColor = System.Drawing.Color.Transparent;
+            this.logoutButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.logoutButton.ForeColor = System.Drawing.Color.White;
+            this.logoutButton.Image = global::project10.Properties.Resources.logout11;
+            this.logoutButton.ImageSize = new System.Drawing.Size(32, 32);
+            this.logoutButton.Location = new System.Drawing.Point(2, 574);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(179, 55);
+            this.logoutButton.TabIndex = 6;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
             // bodyPanel
             // 
             this.bodyPanel.BackColor = System.Drawing.Color.White;
             this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bodyPanel.Location = new System.Drawing.Point(183, 38);
-            this.bodyPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bodyPanel.Margin = new System.Windows.Forms.Padding(2);
             this.bodyPanel.Name = "bodyPanel";
             this.bodyPanel.Size = new System.Drawing.Size(810, 593);
             this.bodyPanel.TabIndex = 7;
@@ -209,7 +207,7 @@
             this.userNameLabel.Font = new System.Drawing.Font("Palatino Linotype", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameLabel.ForeColor = System.Drawing.Color.White;
             this.userNameLabel.Location = new System.Drawing.Point(514, 0);
-            this.userNameLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userNameLabel.Margin = new System.Windows.Forms.Padding(2);
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
             this.userNameLabel.Size = new System.Drawing.Size(296, 38);
@@ -217,25 +215,6 @@
             this.userNameLabel.Text = "Saif";
             this.userNameLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.userNameLabel.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
-            // 
-            // logoutButton
-            // 
-            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
-            this.logoutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.logoutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.logoutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.logoutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.logoutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.logoutButton.FillColor = System.Drawing.Color.Transparent;
-            this.logoutButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.logoutButton.ForeColor = System.Drawing.Color.White;
-            this.logoutButton.Image = global::project10.Properties.Resources.logout11;
-            this.logoutButton.ImageSize = new System.Drawing.Size(32, 32);
-            this.logoutButton.Location = new System.Drawing.Point(2, 574);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(179, 55);
-            this.logoutButton.TabIndex = 6;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // FormManager
             // 
@@ -247,7 +226,7 @@
             this.Controls.Add(this.bodyPanel);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manager";
@@ -272,6 +251,5 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2HtmlLabel userNameLabel;
-        private Guna.UI2.WinForms.Guna2Button allProductButton;
     }
 }

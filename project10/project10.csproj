@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProductUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddProductUC.Designer.cs">
+      <DependentUpon>AddProductUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllProductsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="UserCreateUC.Designer.cs">
       <DependentUpon>UserCreateUC.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddProductUC.resx">
+      <DependentUpon>AddProductUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllProductsUC.resx">
       <DependentUpon>AllProductsUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,6 +271,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

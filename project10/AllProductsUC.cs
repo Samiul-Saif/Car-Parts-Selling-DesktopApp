@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace project10
@@ -19,7 +21,12 @@ namespace project10
 
             dataGridView1.DataSource = productData;
 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.RowTemplate.Height = 70;
+
+            // Set image column properties
+            DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dataGridView1.Columns["Image"];
+            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            imageColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
         }
 
         private DataTable GetProductDataFromDatabase()
@@ -42,6 +49,7 @@ namespace project10
 
         private void selectedButton_Click(object sender, EventArgs e)
         {
+            // Your button click event handler code
         }
     }
 }

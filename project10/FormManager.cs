@@ -30,7 +30,7 @@ namespace project10
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             bodyPanel.Controls.Clear();
-            UserCreateUC f4 = new UserCreateUC();
+            AddProductUC f4 = new AddProductUC();
 
             bodyPanel.Controls.Add(f4);
         }
