@@ -80,9 +80,12 @@ namespace project10
             // 
             // productPictureBox
             // 
-            this.productPictureBox.Location = new Point(17, 16);
+            this.productPictureBox.Location = new Point(12, 16);
+
+            this.productPictureBox.BorderRadius = 10;
+            this.productPictureBox.UseTransparentBackground = true;
             this.productPictureBox.Name = "productPictureBox";
-            this.productPictureBox.Size = new Size(206, 141);
+            this.productPictureBox.Size = new Size(210, 141);
             this.productPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             this.productPictureBox.TabIndex = 0;
             this.productPictureBox.TabStop = false;
@@ -93,9 +96,11 @@ namespace project10
             // 
             // CardControl
             // 
-            this.BackColor = Color.Aquamarine;
+            this.BackColor = Color.White;
+            this.FillColor = Color.FromArgb(29, 29, 29);
             this.Margin = new Padding(10);
-            this.BorderRadius = 10;
+            this.BorderRadius = 15;
+
 
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.productNameLabel);

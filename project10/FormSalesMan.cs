@@ -15,6 +15,10 @@ namespace project10
         public FormSalesMan()
         {
             InitializeComponent();
+
+            bodyPanel.Controls.Clear();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("All Products");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -32,13 +36,13 @@ namespace project10
         private void cartViewButton_Click(object sender, EventArgs e)
         {
             // Check if there are selected products in the list
-            if (BrakingSystem.selectedProductList.Count > 0)
+            if (CategorizedProductsUC.selectedProductList.Count > 0)
             {
                 // Initialize a string to store the cart information
                 string cartInfo = "Selected Products:\n";
 
                 // Iterate through the selectedProductList
-                foreach (var product in BrakingSystem.selectedProductList)
+                foreach (var product in CategorizedProductsUC.selectedProductList)
                 {
                     // Append product information to the cartInfo string
                     cartInfo += $"Product ID: {product.Item1}\n";
@@ -64,18 +68,22 @@ namespace project10
         private void BrakingSystemButton_Click(object sender, EventArgs e)
         {
             bodyPanel.Controls.Clear();
-            BrakingSystem brakingSystem = new BrakingSystem();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Braking System");
             bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void EnginePartsButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            EnginePartsUC enginePartsUC = new EnginePartsUC();
+            bodyPanel.Controls.Add(enginePartsUC);
         }
 
         private void LightingSystemButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            LightingSystemUC enginePartsUC = new LightingSystemUC();
+            bodyPanel.Controls.Add(enginePartsUC);
         }
 
         private void UpgradesButton_Click(object sender, EventArgs e)
@@ -85,37 +93,49 @@ namespace project10
 
         private void CarCareButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            CarCareUC carCareUC = new CarCareUC();
+            bodyPanel.Controls.Add(carCareUC);
         }
 
         private void interiorButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Interior Accessories");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void bodyPartsButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Body Parts");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void accessoriesButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Accessories");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void wheelsButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Wheels & Tires");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void OthersButton_Click(object sender, EventArgs e)
         {
-
+            bodyPanel.Controls.Clear();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Others");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void clearcartButton_Click_1(object sender, EventArgs e)
         {
-            BrakingSystem.selectedProductList.Clear();
+            CategorizedProductsUC.selectedProductList.Clear();
             MessageBox.Show("Your cart has been cleared.", "Cart Cleared", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }

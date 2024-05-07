@@ -9,15 +9,14 @@ using System.Windows.Forms;
 
 namespace project10
 {
-    public partial class BrakingSystem : UserControl
+    public partial class EnginePartsUC : UserControl
     {
-        public static List<Tuple<int, string, string, string, int, decimal,decimal>> selectedProductList = new List<Tuple<int, string, string, string, int, decimal, decimal>>();
         private const string connectionString = "Data Source=(localdb)\\local;Initial Catalog=cpms;Integrated Security=True";
 
-        public BrakingSystem()
+        public EnginePartsUC()
         {
             InitializeComponent();
-            LoadProducts("Braking System");
+            LoadProducts("Engine Parts");
         }
 
         private void LoadProducts(string category)
@@ -26,10 +25,7 @@ namespace project10
 
             foreach (DataRow row in products.Rows)
             {
-                // Create a card control for each product
                 CardControl card = CreateCard(row);
-
-                // Add the card control to the flowLayoutPanel
                 flowLayoutPanel1.Controls.Add(card);
             }
         }
@@ -101,7 +97,7 @@ namespace project10
                 string category = selectedCard.Category;
                 string brand = selectedCard.Brand;
 
-                selectedProductList.Add(Tuple.Create(productId, productName, category, brand, selectedQuantity, price,individualCost));
+                CategorizedProductsUC.selectedProductList.Add(Tuple.Create(productId, productName, category, brand, selectedQuantity, price,individualCost));
 
                 MessageBox.Show("Product added to cart!");
                 selectedCard.isSelected = false;

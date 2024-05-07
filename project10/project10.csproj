@@ -70,11 +70,29 @@
     <Compile Include="AllUsersUC.Designer.cs">
       <DependentUpon>AllUsersUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="BrakingSystem.cs">
+    <Compile Include="CarCareUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BrakingSystem.Designer.cs">
-      <DependentUpon>BrakingSystem.cs</DependentUpon>
+    <Compile Include="CarCareUC.Designer.cs">
+      <DependentUpon>CarCareUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LightingSystemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LightingSystemUC.Designer.cs">
+      <DependentUpon>LightingSystemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnginePartsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnginePartsUC.Designer.cs">
+      <DependentUpon>EnginePartsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategorizedProductsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CategorizedProductsUC.Designer.cs">
+      <DependentUpon>CategorizedProductsUC.cs</DependentUpon>
     </Compile>
     <Compile Include="CardControl.cs">
       <SubType>Component</SubType>
@@ -172,8 +190,17 @@
     <EmbeddedResource Include="AllUsersUC.resx">
       <DependentUpon>AllUsersUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BrakingSystem.resx">
-      <DependentUpon>BrakingSystem.cs</DependentUpon>
+    <EmbeddedResource Include="CarCareUC.resx">
+      <DependentUpon>CarCareUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightingSystemUC.resx">
+      <DependentUpon>LightingSystemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnginePartsUC.resx">
+      <DependentUpon>EnginePartsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategorizedProductsUC.resx">
+      <DependentUpon>CategorizedProductsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteProductsUC.resx">
       <DependentUpon>DeleteProductsUC.cs</DependentUpon>

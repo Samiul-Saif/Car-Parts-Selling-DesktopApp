@@ -35,7 +35,6 @@
             this.bodyPartsButton = new Guna.UI2.WinForms.Guna2Button();
             this.interiorButton = new Guna.UI2.WinForms.Guna2Button();
             this.CarCareButton = new Guna.UI2.WinForms.Guna2Button();
-            this.UpgradesButton = new Guna.UI2.WinForms.Guna2Button();
             this.LightingSystemButton = new Guna.UI2.WinForms.Guna2Button();
             this.EnginePartsButton = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,7 +62,6 @@
             this.guna2Panel1.Controls.Add(this.bodyPartsButton);
             this.guna2Panel1.Controls.Add(this.interiorButton);
             this.guna2Panel1.Controls.Add(this.CarCareButton);
-            this.guna2Panel1.Controls.Add(this.UpgradesButton);
             this.guna2Panel1.Controls.Add(this.LightingSystemButton);
             this.guna2Panel1.Controls.Add(this.EnginePartsButton);
             this.guna2Panel1.Controls.Add(this.label3);
@@ -92,7 +90,7 @@
             this.OthersButton.ForeColor = System.Drawing.Color.White;
             this.OthersButton.ImageSize = new System.Drawing.Size(32, 32);
             this.OthersButton.IndicateFocus = true;
-            this.OthersButton.Location = new System.Drawing.Point(3, 575);
+            this.OthersButton.Location = new System.Drawing.Point(3, 522);
             this.OthersButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.OthersButton.Name = "OthersButton";
             this.OthersButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -115,7 +113,7 @@
             this.wheelsButton.ForeColor = System.Drawing.Color.White;
             this.wheelsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.wheelsButton.IndicateFocus = true;
-            this.wheelsButton.Location = new System.Drawing.Point(3, 522);
+            this.wheelsButton.Location = new System.Drawing.Point(3, 469);
             this.wheelsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.wheelsButton.Name = "wheelsButton";
             this.wheelsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -138,7 +136,7 @@
             this.accessoriesButton.ForeColor = System.Drawing.Color.White;
             this.accessoriesButton.ImageSize = new System.Drawing.Size(32, 32);
             this.accessoriesButton.IndicateFocus = true;
-            this.accessoriesButton.Location = new System.Drawing.Point(3, 469);
+            this.accessoriesButton.Location = new System.Drawing.Point(3, 416);
             this.accessoriesButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.accessoriesButton.Name = "accessoriesButton";
             this.accessoriesButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -161,7 +159,7 @@
             this.bodyPartsButton.ForeColor = System.Drawing.Color.White;
             this.bodyPartsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.bodyPartsButton.IndicateFocus = true;
-            this.bodyPartsButton.Location = new System.Drawing.Point(3, 416);
+            this.bodyPartsButton.Location = new System.Drawing.Point(3, 363);
             this.bodyPartsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.bodyPartsButton.Name = "bodyPartsButton";
             this.bodyPartsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -184,7 +182,7 @@
             this.interiorButton.ForeColor = System.Drawing.Color.White;
             this.interiorButton.ImageSize = new System.Drawing.Size(32, 32);
             this.interiorButton.IndicateFocus = true;
-            this.interiorButton.Location = new System.Drawing.Point(3, 363);
+            this.interiorButton.Location = new System.Drawing.Point(3, 310);
             this.interiorButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.interiorButton.Name = "interiorButton";
             this.interiorButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -207,7 +205,7 @@
             this.CarCareButton.ForeColor = System.Drawing.Color.White;
             this.CarCareButton.ImageSize = new System.Drawing.Size(32, 32);
             this.CarCareButton.IndicateFocus = true;
-            this.CarCareButton.Location = new System.Drawing.Point(3, 310);
+            this.CarCareButton.Location = new System.Drawing.Point(3, 257);
             this.CarCareButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.CarCareButton.Name = "CarCareButton";
             this.CarCareButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -215,29 +213,6 @@
             this.CarCareButton.TabIndex = 17;
             this.CarCareButton.Text = "Car Care";
             this.CarCareButton.Click += new System.EventHandler(this.CarCareButton_Click);
-            // 
-            // UpgradesButton
-            // 
-            this.UpgradesButton.BackColor = System.Drawing.Color.Transparent;
-            this.UpgradesButton.BorderRadius = 5;
-            this.UpgradesButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpgradesButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpgradesButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpgradesButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpgradesButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UpgradesButton.FillColor = System.Drawing.Color.CadetBlue;
-            this.UpgradesButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.UpgradesButton.ForeColor = System.Drawing.Color.White;
-            this.UpgradesButton.ImageSize = new System.Drawing.Size(32, 32);
-            this.UpgradesButton.IndicateFocus = true;
-            this.UpgradesButton.Location = new System.Drawing.Point(3, 257);
-            this.UpgradesButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
-            this.UpgradesButton.Name = "UpgradesButton";
-            this.UpgradesButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.UpgradesButton.Size = new System.Drawing.Size(253, 53);
-            this.UpgradesButton.TabIndex = 16;
-            this.UpgradesButton.Text = "Upgrades";
-            this.UpgradesButton.Click += new System.EventHandler(this.UpgradesButton_Click);
             // 
             // LightingSystemButton
             // 
@@ -490,7 +465,6 @@
         private Guna.UI2.WinForms.Guna2Button bodyPartsButton;
         private Guna.UI2.WinForms.Guna2Button interiorButton;
         private Guna.UI2.WinForms.Guna2Button CarCareButton;
-        private Guna.UI2.WinForms.Guna2Button UpgradesButton;
         private Guna.UI2.WinForms.Guna2Button LightingSystemButton;
         private Guna.UI2.WinForms.Guna2Button EnginePartsButton;
         protected internal Guna.UI2.WinForms.Guna2Panel guna2Panel1;
