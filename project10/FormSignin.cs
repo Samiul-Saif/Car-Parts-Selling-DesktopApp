@@ -50,18 +50,22 @@ namespace project10
                             f2.Show();
                             this.Hide();
                         }
-                        else if (userType == "User")
+                        else if (userType == "Manager")
                         {
                             FormManager f3 = new FormManager();
                             f3.Show();
                             this.Hide();
                         }
-                        else if (userType == "Employee")
+                        else if (userType == "Salesman")
                         {
-                            Form4 f4 = new Form4();
-                            f4.Show();
+                            FormSalesMan salesman = new FormSalesMan();
+                            salesman.Show();
                             this.Hide();
                         }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Credential Missmatched");
                     }
                 }
             }
@@ -73,7 +77,7 @@ namespace project10
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
+            FormRegistration f5 = new FormRegistration();
             f5.Show();
             this.Hide();
         }

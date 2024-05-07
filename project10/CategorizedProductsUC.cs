@@ -102,7 +102,6 @@ namespace project10
 
         private void addToCartButton_Click(object sender, EventArgs e)
         {
-            // Get the selected card
             CardControl selectedCard = flowLayoutPanel1.Controls.OfType<CardControl>().FirstOrDefault(card => card.isSelected);
 
             if (selectedCard != null)

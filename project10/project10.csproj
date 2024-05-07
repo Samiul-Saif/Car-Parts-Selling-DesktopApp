@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -70,24 +71,6 @@
     <Compile Include="AllUsersUC.Designer.cs">
       <DependentUpon>AllUsersUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="CarCareUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CarCareUC.Designer.cs">
-      <DependentUpon>CarCareUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LightingSystemUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LightingSystemUC.Designer.cs">
-      <DependentUpon>LightingSystemUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EnginePartsUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="EnginePartsUC.Designer.cs">
-      <DependentUpon>EnginePartsUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="CategorizedProductsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +85,12 @@
     </Compile>
     <Compile Include="DeleteProductsUC.Designer.cs">
       <DependentUpon>DeleteProductsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistration.Designer.cs">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSalesMan.cs">
       <SubType>Form</SubType>
@@ -190,20 +179,14 @@
     <EmbeddedResource Include="AllUsersUC.resx">
       <DependentUpon>AllUsersUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CarCareUC.resx">
-      <DependentUpon>CarCareUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LightingSystemUC.resx">
-      <DependentUpon>LightingSystemUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EnginePartsUC.resx">
-      <DependentUpon>EnginePartsUC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CategorizedProductsUC.resx">
       <DependentUpon>CategorizedProductsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteProductsUC.resx">
       <DependentUpon>DeleteProductsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistration.resx">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSalesMan.resx">
       <DependentUpon>FormSalesMan.cs</DependentUpon>
@@ -328,6 +311,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper %285%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

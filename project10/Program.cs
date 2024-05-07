@@ -16,7 +16,7 @@ namespace project10
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSalesMan());
+            Application.Run(new FormSignin());
         }
     }
 }

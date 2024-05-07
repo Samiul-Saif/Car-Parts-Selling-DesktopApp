@@ -48,6 +48,7 @@
             this.userNameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bodyPanel = new System.Windows.Forms.Panel();
             this.logoutButton = new Guna.UI2.WinForms.Guna2Button();
+            this.AllProductsButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.bottomPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,8 +65,9 @@
             this.guna2Panel1.Controls.Add(this.CarCareButton);
             this.guna2Panel1.Controls.Add(this.LightingSystemButton);
             this.guna2Panel1.Controls.Add(this.EnginePartsButton);
-            this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.BrakingSystemButton);
+            this.guna2Panel1.Controls.Add(this.AllProductsButton);
+            this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.logoutButton);
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -90,7 +92,7 @@
             this.OthersButton.ForeColor = System.Drawing.Color.White;
             this.OthersButton.ImageSize = new System.Drawing.Size(32, 32);
             this.OthersButton.IndicateFocus = true;
-            this.OthersButton.Location = new System.Drawing.Point(3, 522);
+            this.OthersButton.Location = new System.Drawing.Point(3, 575);
             this.OthersButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.OthersButton.Name = "OthersButton";
             this.OthersButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -113,7 +115,7 @@
             this.wheelsButton.ForeColor = System.Drawing.Color.White;
             this.wheelsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.wheelsButton.IndicateFocus = true;
-            this.wheelsButton.Location = new System.Drawing.Point(3, 469);
+            this.wheelsButton.Location = new System.Drawing.Point(3, 522);
             this.wheelsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.wheelsButton.Name = "wheelsButton";
             this.wheelsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -136,7 +138,7 @@
             this.accessoriesButton.ForeColor = System.Drawing.Color.White;
             this.accessoriesButton.ImageSize = new System.Drawing.Size(32, 32);
             this.accessoriesButton.IndicateFocus = true;
-            this.accessoriesButton.Location = new System.Drawing.Point(3, 416);
+            this.accessoriesButton.Location = new System.Drawing.Point(3, 469);
             this.accessoriesButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.accessoriesButton.Name = "accessoriesButton";
             this.accessoriesButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -159,7 +161,7 @@
             this.bodyPartsButton.ForeColor = System.Drawing.Color.White;
             this.bodyPartsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.bodyPartsButton.IndicateFocus = true;
-            this.bodyPartsButton.Location = new System.Drawing.Point(3, 363);
+            this.bodyPartsButton.Location = new System.Drawing.Point(3, 416);
             this.bodyPartsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.bodyPartsButton.Name = "bodyPartsButton";
             this.bodyPartsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -182,7 +184,7 @@
             this.interiorButton.ForeColor = System.Drawing.Color.White;
             this.interiorButton.ImageSize = new System.Drawing.Size(32, 32);
             this.interiorButton.IndicateFocus = true;
-            this.interiorButton.Location = new System.Drawing.Point(3, 310);
+            this.interiorButton.Location = new System.Drawing.Point(3, 363);
             this.interiorButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.interiorButton.Name = "interiorButton";
             this.interiorButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -205,7 +207,7 @@
             this.CarCareButton.ForeColor = System.Drawing.Color.White;
             this.CarCareButton.ImageSize = new System.Drawing.Size(32, 32);
             this.CarCareButton.IndicateFocus = true;
-            this.CarCareButton.Location = new System.Drawing.Point(3, 257);
+            this.CarCareButton.Location = new System.Drawing.Point(3, 310);
             this.CarCareButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.CarCareButton.Name = "CarCareButton";
             this.CarCareButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -228,7 +230,7 @@
             this.LightingSystemButton.ForeColor = System.Drawing.Color.White;
             this.LightingSystemButton.ImageSize = new System.Drawing.Size(32, 32);
             this.LightingSystemButton.IndicateFocus = true;
-            this.LightingSystemButton.Location = new System.Drawing.Point(3, 204);
+            this.LightingSystemButton.Location = new System.Drawing.Point(3, 257);
             this.LightingSystemButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.LightingSystemButton.Name = "LightingSystemButton";
             this.LightingSystemButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -251,7 +253,7 @@
             this.EnginePartsButton.ForeColor = System.Drawing.Color.White;
             this.EnginePartsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.EnginePartsButton.IndicateFocus = true;
-            this.EnginePartsButton.Location = new System.Drawing.Point(3, 151);
+            this.EnginePartsButton.Location = new System.Drawing.Point(3, 204);
             this.EnginePartsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.EnginePartsButton.Name = "EnginePartsButton";
             this.EnginePartsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -285,7 +287,7 @@
             this.BrakingSystemButton.ForeColor = System.Drawing.Color.White;
             this.BrakingSystemButton.ImageSize = new System.Drawing.Size(32, 32);
             this.BrakingSystemButton.IndicateFocus = true;
-            this.BrakingSystemButton.Location = new System.Drawing.Point(3, 98);
+            this.BrakingSystemButton.Location = new System.Drawing.Point(3, 151);
             this.BrakingSystemButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
             this.BrakingSystemButton.Name = "BrakingSystemButton";
             this.BrakingSystemButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -421,6 +423,30 @@
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(253, 68);
             this.logoutButton.TabIndex = 6;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
+            // AllProductsButton
+            // 
+            this.AllProductsButton.BackColor = System.Drawing.Color.Transparent;
+            this.AllProductsButton.BorderRadius = 5;
+            this.AllProductsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AllProductsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AllProductsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AllProductsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AllProductsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AllProductsButton.FillColor = System.Drawing.Color.CadetBlue;
+            this.AllProductsButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.AllProductsButton.ForeColor = System.Drawing.Color.White;
+            this.AllProductsButton.ImageSize = new System.Drawing.Size(32, 32);
+            this.AllProductsButton.IndicateFocus = true;
+            this.AllProductsButton.Location = new System.Drawing.Point(3, 98);
+            this.AllProductsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.AllProductsButton.Name = "AllProductsButton";
+            this.AllProductsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.AllProductsButton.Size = new System.Drawing.Size(253, 53);
+            this.AllProductsButton.TabIndex = 23;
+            this.AllProductsButton.Text = "All";
+            this.AllProductsButton.Click += new System.EventHandler(this.AllProductsButton_Click);
             // 
             // FormSalesMan
             // 
@@ -468,5 +494,6 @@
         private Guna.UI2.WinForms.Guna2Button LightingSystemButton;
         private Guna.UI2.WinForms.Guna2Button EnginePartsButton;
         protected internal Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button AllProductsButton;
     }
 }

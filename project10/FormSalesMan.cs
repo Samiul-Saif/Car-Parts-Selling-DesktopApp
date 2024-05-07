@@ -75,15 +75,15 @@ namespace project10
         private void EnginePartsButton_Click(object sender, EventArgs e)
         {
             bodyPanel.Controls.Clear();
-            EnginePartsUC enginePartsUC = new EnginePartsUC();
-            bodyPanel.Controls.Add(enginePartsUC);
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Engine Parts");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void LightingSystemButton_Click(object sender, EventArgs e)
         {
             bodyPanel.Controls.Clear();
-            LightingSystemUC enginePartsUC = new LightingSystemUC();
-            bodyPanel.Controls.Add(enginePartsUC);
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Lighting System");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void UpgradesButton_Click(object sender, EventArgs e)
@@ -94,8 +94,8 @@ namespace project10
         private void CarCareButton_Click(object sender, EventArgs e)
         {
             bodyPanel.Controls.Clear();
-            CarCareUC carCareUC = new CarCareUC();
-            bodyPanel.Controls.Add(carCareUC);
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("Car Care");
+            bodyPanel.Controls.Add(brakingSystem);
         }
 
         private void interiorButton_Click(object sender, EventArgs e)
@@ -138,6 +138,20 @@ namespace project10
             CategorizedProductsUC.selectedProductList.Clear();
             MessageBox.Show("Your cart has been cleared.", "Cart Cleared", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void AllProductsButton_Click(object sender, EventArgs e)
+        {
+            bodyPanel.Controls.Clear();
+            CategorizedProductsUC brakingSystem = new CategorizedProductsUC("All Products");
+            bodyPanel.Controls.Add(brakingSystem);
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormSignin loginForm = new FormSignin();
+            loginForm.Show();
         }
     }
 }
