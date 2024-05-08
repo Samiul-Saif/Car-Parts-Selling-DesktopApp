@@ -11,6 +11,7 @@ namespace project10
         {
             InitializeComponent();
             PopulateDataGridView();
+            
         }
 
         private void PopulateDataGridView()
@@ -19,7 +20,6 @@ namespace project10
 
             dataGridView1.DataSource = userData;
 
-            // Set DataGridView auto size mode
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
@@ -45,7 +45,43 @@ namespace project10
 
         private void selectedButton_Click(object sender, EventArgs e)
         {
-            // Your button click event handler code
         }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            string searchValue = searchTextBox.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchValue))
+            {
+                dataGridView1.DataSource = GetUserDataFromDatabase();
+            }
+            else
+            {
+                DataTable filteredData = FilterUserData(searchValue);
+                dataGridView1.DataSource = filteredData;
+            }
+        }
+
+        private DataTable FilterUserData(string searchValue)
+        {
+            string connectionString = "Data Source=(localdb)\\local;Initial Catalog=cpms;Integrated Security=True";
+
+            string query = "SELECT * FROM [User] WHERE Username LIKE @SearchValue";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@SearchValue", "%" + searchValue + "%");
+
+                    DataTable dataTable = new DataTable();
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(dataTable);
+                    return dataTable;
+                }
+            }
+        }
+
+        
     }
 }

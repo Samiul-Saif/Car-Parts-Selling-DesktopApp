@@ -37,8 +37,10 @@
             this.CarCareButton = new Guna.UI2.WinForms.Guna2Button();
             this.LightingSystemButton = new Guna.UI2.WinForms.Guna2Button();
             this.EnginePartsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.BrakingSystemButton = new Guna.UI2.WinForms.Guna2Button();
+            this.AllProductsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.logoutButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bottomPanel = new System.Windows.Forms.Panel();
             this.clearcartButton = new Guna.UI2.WinForms.Guna2Button();
@@ -47,8 +49,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.userNameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bodyPanel = new System.Windows.Forms.Panel();
-            this.logoutButton = new Guna.UI2.WinForms.Guna2Button();
-            this.AllProductsButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.bottomPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,10 +72,10 @@
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel1.Size = new System.Drawing.Size(259, 777);
+            this.guna2Panel1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Size = new System.Drawing.Size(194, 631);
             this.guna2Panel1.TabIndex = 6;
             // 
             // OthersButton
@@ -92,11 +92,11 @@
             this.OthersButton.ForeColor = System.Drawing.Color.White;
             this.OthersButton.ImageSize = new System.Drawing.Size(32, 32);
             this.OthersButton.IndicateFocus = true;
-            this.OthersButton.Location = new System.Drawing.Point(3, 575);
-            this.OthersButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.OthersButton.Location = new System.Drawing.Point(2, 467);
+            this.OthersButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.OthersButton.Name = "OthersButton";
-            this.OthersButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.OthersButton.Size = new System.Drawing.Size(253, 53);
+            this.OthersButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.OthersButton.Size = new System.Drawing.Size(190, 43);
             this.OthersButton.TabIndex = 22;
             this.OthersButton.Text = "Others";
             this.OthersButton.Click += new System.EventHandler(this.OthersButton_Click);
@@ -115,11 +115,11 @@
             this.wheelsButton.ForeColor = System.Drawing.Color.White;
             this.wheelsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.wheelsButton.IndicateFocus = true;
-            this.wheelsButton.Location = new System.Drawing.Point(3, 522);
-            this.wheelsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.wheelsButton.Location = new System.Drawing.Point(2, 424);
+            this.wheelsButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.wheelsButton.Name = "wheelsButton";
-            this.wheelsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.wheelsButton.Size = new System.Drawing.Size(253, 53);
+            this.wheelsButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.wheelsButton.Size = new System.Drawing.Size(190, 43);
             this.wheelsButton.TabIndex = 21;
             this.wheelsButton.Text = "Wheels";
             this.wheelsButton.Click += new System.EventHandler(this.wheelsButton_Click);
@@ -138,11 +138,11 @@
             this.accessoriesButton.ForeColor = System.Drawing.Color.White;
             this.accessoriesButton.ImageSize = new System.Drawing.Size(32, 32);
             this.accessoriesButton.IndicateFocus = true;
-            this.accessoriesButton.Location = new System.Drawing.Point(3, 469);
-            this.accessoriesButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.accessoriesButton.Location = new System.Drawing.Point(2, 381);
+            this.accessoriesButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.accessoriesButton.Name = "accessoriesButton";
-            this.accessoriesButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.accessoriesButton.Size = new System.Drawing.Size(253, 53);
+            this.accessoriesButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.accessoriesButton.Size = new System.Drawing.Size(190, 43);
             this.accessoriesButton.TabIndex = 20;
             this.accessoriesButton.Text = "Accessories";
             this.accessoriesButton.Click += new System.EventHandler(this.accessoriesButton_Click);
@@ -161,11 +161,11 @@
             this.bodyPartsButton.ForeColor = System.Drawing.Color.White;
             this.bodyPartsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.bodyPartsButton.IndicateFocus = true;
-            this.bodyPartsButton.Location = new System.Drawing.Point(3, 416);
-            this.bodyPartsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.bodyPartsButton.Location = new System.Drawing.Point(2, 338);
+            this.bodyPartsButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.bodyPartsButton.Name = "bodyPartsButton";
-            this.bodyPartsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.bodyPartsButton.Size = new System.Drawing.Size(253, 53);
+            this.bodyPartsButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bodyPartsButton.Size = new System.Drawing.Size(190, 43);
             this.bodyPartsButton.TabIndex = 19;
             this.bodyPartsButton.Text = "Body Parts";
             this.bodyPartsButton.Click += new System.EventHandler(this.bodyPartsButton_Click);
@@ -184,11 +184,11 @@
             this.interiorButton.ForeColor = System.Drawing.Color.White;
             this.interiorButton.ImageSize = new System.Drawing.Size(32, 32);
             this.interiorButton.IndicateFocus = true;
-            this.interiorButton.Location = new System.Drawing.Point(3, 363);
-            this.interiorButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.interiorButton.Location = new System.Drawing.Point(2, 295);
+            this.interiorButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.interiorButton.Name = "interiorButton";
-            this.interiorButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.interiorButton.Size = new System.Drawing.Size(253, 53);
+            this.interiorButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.interiorButton.Size = new System.Drawing.Size(190, 43);
             this.interiorButton.TabIndex = 18;
             this.interiorButton.Text = "Interior Accessories";
             this.interiorButton.Click += new System.EventHandler(this.interiorButton_Click);
@@ -207,11 +207,11 @@
             this.CarCareButton.ForeColor = System.Drawing.Color.White;
             this.CarCareButton.ImageSize = new System.Drawing.Size(32, 32);
             this.CarCareButton.IndicateFocus = true;
-            this.CarCareButton.Location = new System.Drawing.Point(3, 310);
-            this.CarCareButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.CarCareButton.Location = new System.Drawing.Point(2, 252);
+            this.CarCareButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.CarCareButton.Name = "CarCareButton";
-            this.CarCareButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.CarCareButton.Size = new System.Drawing.Size(253, 53);
+            this.CarCareButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CarCareButton.Size = new System.Drawing.Size(190, 43);
             this.CarCareButton.TabIndex = 17;
             this.CarCareButton.Text = "Car Care";
             this.CarCareButton.Click += new System.EventHandler(this.CarCareButton_Click);
@@ -230,11 +230,11 @@
             this.LightingSystemButton.ForeColor = System.Drawing.Color.White;
             this.LightingSystemButton.ImageSize = new System.Drawing.Size(32, 32);
             this.LightingSystemButton.IndicateFocus = true;
-            this.LightingSystemButton.Location = new System.Drawing.Point(3, 257);
-            this.LightingSystemButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.LightingSystemButton.Location = new System.Drawing.Point(2, 209);
+            this.LightingSystemButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.LightingSystemButton.Name = "LightingSystemButton";
-            this.LightingSystemButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.LightingSystemButton.Size = new System.Drawing.Size(253, 53);
+            this.LightingSystemButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LightingSystemButton.Size = new System.Drawing.Size(190, 43);
             this.LightingSystemButton.TabIndex = 15;
             this.LightingSystemButton.Text = "Lighting System";
             this.LightingSystemButton.Click += new System.EventHandler(this.LightingSystemButton_Click);
@@ -253,25 +253,14 @@
             this.EnginePartsButton.ForeColor = System.Drawing.Color.White;
             this.EnginePartsButton.ImageSize = new System.Drawing.Size(32, 32);
             this.EnginePartsButton.IndicateFocus = true;
-            this.EnginePartsButton.Location = new System.Drawing.Point(3, 204);
-            this.EnginePartsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.EnginePartsButton.Location = new System.Drawing.Point(2, 166);
+            this.EnginePartsButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.EnginePartsButton.Name = "EnginePartsButton";
-            this.EnginePartsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.EnginePartsButton.Size = new System.Drawing.Size(253, 53);
+            this.EnginePartsButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.EnginePartsButton.Size = new System.Drawing.Size(190, 43);
             this.EnginePartsButton.TabIndex = 14;
             this.EnginePartsButton.Text = "Engine Parts";
             this.EnginePartsButton.Click += new System.EventHandler(this.EnginePartsButton_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(32, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 29);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Salesman";
             // 
             // BrakingSystemButton
             // 
@@ -287,22 +276,75 @@
             this.BrakingSystemButton.ForeColor = System.Drawing.Color.White;
             this.BrakingSystemButton.ImageSize = new System.Drawing.Size(32, 32);
             this.BrakingSystemButton.IndicateFocus = true;
-            this.BrakingSystemButton.Location = new System.Drawing.Point(3, 151);
-            this.BrakingSystemButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
+            this.BrakingSystemButton.Location = new System.Drawing.Point(2, 123);
+            this.BrakingSystemButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
             this.BrakingSystemButton.Name = "BrakingSystemButton";
-            this.BrakingSystemButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.BrakingSystemButton.Size = new System.Drawing.Size(253, 53);
+            this.BrakingSystemButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BrakingSystemButton.Size = new System.Drawing.Size(190, 43);
             this.BrakingSystemButton.TabIndex = 7;
             this.BrakingSystemButton.Text = "Braking System";
             this.BrakingSystemButton.Click += new System.EventHandler(this.BrakingSystemButton_Click);
             // 
+            // AllProductsButton
+            // 
+            this.AllProductsButton.BackColor = System.Drawing.Color.Transparent;
+            this.AllProductsButton.BorderRadius = 5;
+            this.AllProductsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AllProductsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AllProductsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AllProductsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AllProductsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AllProductsButton.FillColor = System.Drawing.Color.CadetBlue;
+            this.AllProductsButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.AllProductsButton.ForeColor = System.Drawing.Color.White;
+            this.AllProductsButton.ImageSize = new System.Drawing.Size(32, 32);
+            this.AllProductsButton.IndicateFocus = true;
+            this.AllProductsButton.Location = new System.Drawing.Point(2, 80);
+            this.AllProductsButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 10);
+            this.AllProductsButton.Name = "AllProductsButton";
+            this.AllProductsButton.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AllProductsButton.Size = new System.Drawing.Size(190, 43);
+            this.AllProductsButton.TabIndex = 23;
+            this.AllProductsButton.Text = "All";
+            this.AllProductsButton.Click += new System.EventHandler(this.AllProductsButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(24, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 29);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Salesman";
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
+            this.logoutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.logoutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.logoutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.logoutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.logoutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.logoutButton.FillColor = System.Drawing.Color.Transparent;
+            this.logoutButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.logoutButton.ForeColor = System.Drawing.Color.White;
+            this.logoutButton.Image = global::project10.Properties.Resources.logout11;
+            this.logoutButton.ImageSize = new System.Drawing.Size(32, 32);
+            this.logoutButton.Location = new System.Drawing.Point(2, 574);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(190, 55);
+            this.logoutButton.TabIndex = 6;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(253, 96);
+            this.panel1.Size = new System.Drawing.Size(190, 78);
             this.panel1.TabIndex = 13;
             // 
             // bottomPanel
@@ -311,10 +353,10 @@
             this.bottomPanel.Controls.Add(this.clearcartButton);
             this.bottomPanel.Controls.Add(this.cartViewButton);
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomPanel.Location = new System.Drawing.Point(259, 697);
-            this.bottomPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bottomPanel.Location = new System.Drawing.Point(194, 566);
+            this.bottomPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bottomPanel.Name = "bottomPanel";
-            this.bottomPanel.Size = new System.Drawing.Size(1065, 80);
+            this.bottomPanel.Size = new System.Drawing.Size(799, 65);
             this.bottomPanel.TabIndex = 7;
             // 
             // clearcartButton
@@ -329,10 +371,9 @@
             this.clearcartButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.clearcartButton.ForeColor = System.Drawing.Color.White;
             this.clearcartButton.ImageSize = new System.Drawing.Size(32, 32);
-            this.clearcartButton.Location = new System.Drawing.Point(21, 14);
-            this.clearcartButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clearcartButton.Location = new System.Drawing.Point(16, 11);
             this.clearcartButton.Name = "clearcartButton";
-            this.clearcartButton.Size = new System.Drawing.Size(144, 48);
+            this.clearcartButton.Size = new System.Drawing.Size(108, 39);
             this.clearcartButton.TabIndex = 22;
             this.clearcartButton.Text = "Clear Cart";
             this.clearcartButton.Click += new System.EventHandler(this.clearcartButton_Click_1);
@@ -349,12 +390,11 @@
             this.cartViewButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.cartViewButton.ForeColor = System.Drawing.Color.White;
             this.cartViewButton.ImageSize = new System.Drawing.Size(32, 32);
-            this.cartViewButton.Location = new System.Drawing.Point(913, 16);
-            this.cartViewButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cartViewButton.Location = new System.Drawing.Point(665, 13);
             this.cartViewButton.Name = "cartViewButton";
-            this.cartViewButton.Size = new System.Drawing.Size(133, 48);
+            this.cartViewButton.Size = new System.Drawing.Size(120, 39);
             this.cartViewButton.TabIndex = 21;
-            this.cartViewButton.Text = "Cart";
+            this.cartViewButton.Text = "View Cart";
             this.cartViewButton.Click += new System.EventHandler(this.cartViewButton_Click);
             // 
             // label1
@@ -362,7 +402,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(829, 382);
+            this.label1.Location = new System.Drawing.Point(622, 310);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 29);
             this.label1.TabIndex = 0;
@@ -373,10 +414,9 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Controls.Add(this.userNameLabel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(259, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(194, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1065, 47);
+            this.panel2.Size = new System.Drawing.Size(799, 38);
             this.panel2.TabIndex = 12;
             // 
             // userNameLabel
@@ -386,11 +426,11 @@
             this.userNameLabel.Dock = System.Windows.Forms.DockStyle.Right;
             this.userNameLabel.Font = new System.Drawing.Font("Palatino Linotype", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameLabel.ForeColor = System.Drawing.Color.White;
-            this.userNameLabel.Location = new System.Drawing.Point(670, 0);
-            this.userNameLabel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userNameLabel.Location = new System.Drawing.Point(503, 0);
+            this.userNameLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Padding = new System.Windows.Forms.Padding(0, 0, 53, 0);
-            this.userNameLabel.Size = new System.Drawing.Size(395, 47);
+            this.userNameLabel.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
+            this.userNameLabel.Size = new System.Drawing.Size(296, 38);
             this.userNameLabel.TabIndex = 12;
             this.userNameLabel.Text = "Saif";
             this.userNameLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
@@ -399,67 +439,23 @@
             // 
             this.bodyPanel.BackColor = System.Drawing.Color.White;
             this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyPanel.Location = new System.Drawing.Point(259, 47);
-            this.bodyPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bodyPanel.Location = new System.Drawing.Point(194, 38);
             this.bodyPanel.Name = "bodyPanel";
-            this.bodyPanel.Size = new System.Drawing.Size(1065, 650);
+            this.bodyPanel.Size = new System.Drawing.Size(799, 528);
             this.bodyPanel.TabIndex = 13;
-            // 
-            // logoutButton
-            // 
-            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
-            this.logoutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.logoutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.logoutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.logoutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.logoutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.logoutButton.FillColor = System.Drawing.Color.Transparent;
-            this.logoutButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.logoutButton.ForeColor = System.Drawing.Color.White;
-            this.logoutButton.Image = global::project10.Properties.Resources.logout11;
-            this.logoutButton.ImageSize = new System.Drawing.Size(32, 32);
-            this.logoutButton.Location = new System.Drawing.Point(3, 707);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(253, 68);
-            this.logoutButton.TabIndex = 6;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
-            // 
-            // AllProductsButton
-            // 
-            this.AllProductsButton.BackColor = System.Drawing.Color.Transparent;
-            this.AllProductsButton.BorderRadius = 5;
-            this.AllProductsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AllProductsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AllProductsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AllProductsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AllProductsButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AllProductsButton.FillColor = System.Drawing.Color.CadetBlue;
-            this.AllProductsButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.AllProductsButton.ForeColor = System.Drawing.Color.White;
-            this.AllProductsButton.ImageSize = new System.Drawing.Size(32, 32);
-            this.AllProductsButton.IndicateFocus = true;
-            this.AllProductsButton.Location = new System.Drawing.Point(3, 98);
-            this.AllProductsButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 12);
-            this.AllProductsButton.Name = "AllProductsButton";
-            this.AllProductsButton.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.AllProductsButton.Size = new System.Drawing.Size(253, 53);
-            this.AllProductsButton.TabIndex = 23;
-            this.AllProductsButton.Text = "All";
-            this.AllProductsButton.Click += new System.EventHandler(this.AllProductsButton_Click);
             // 
             // FormSalesMan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1324, 777);
+            this.ClientSize = new System.Drawing.Size(993, 631);
             this.Controls.Add(this.bodyPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormSalesMan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manager";

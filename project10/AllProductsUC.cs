@@ -23,7 +23,6 @@ namespace project10
 
             dataGridView1.RowTemplate.Height = 70;
 
-            // Set image column properties
             DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dataGridView1.Columns["Image"];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
             imageColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
@@ -33,7 +32,7 @@ namespace project10
         {
             string connectionString = "Data Source=(localdb)\\local;Initial Catalog=cpms;Integrated Security=True";
 
-            string query = "SELECT * FROM [Products]"; // Selecting all columns from the Products table
+            string query = "SELECT * FROM [Products]"; 
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -49,7 +48,42 @@ namespace project10
 
         private void selectedButton_Click(object sender, EventArgs e)
         {
-            // Your button click event handler code
         }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            string searchValue = searchTextBox.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchValue))
+            {
+                dataGridView1.DataSource = GetProductDataFromDatabase();
+            }
+            else
+            {
+                DataTable filteredData = FilterProductData(searchValue);
+                dataGridView1.DataSource = filteredData;
+            }
+        }
+
+        private DataTable FilterProductData(string searchValue)
+        {
+            string connectionString = "Data Source=(localdb)\\local;Initial Catalog=cpms;Integrated Security=True";
+
+            string query = "SELECT * FROM [Products] WHERE ProductName LIKE @SearchValue";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@SearchValue", "%" + searchValue + "%");
+
+                    DataTable dataTable = new DataTable();
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(dataTable);
+                    return dataTable;
+                }
+            }
+        }
+
     }
 }

@@ -12,10 +12,10 @@ namespace project10
 {
     public partial class FormSalesMan : Form
     {
-        public FormSalesMan()
+        public FormSalesMan(string uname)
         {
             InitializeComponent();
-
+            userNameLabel.Text = uname;
             bodyPanel.Controls.Clear();
             CategorizedProductsUC brakingSystem = new CategorizedProductsUC("All Products");
             bodyPanel.Controls.Add(brakingSystem);
@@ -35,16 +35,13 @@ namespace project10
 
         private void cartViewButton_Click(object sender, EventArgs e)
         {
-            // Check if there are selected products in the list
+            decimal totalCost = 0;
             if (CategorizedProductsUC.selectedProductList.Count > 0)
             {
-                // Initialize a string to store the cart information
-                string cartInfo = "Selected Products:\n";
+                string cartInfo = "\n";
 
-                // Iterate through the selectedProductList
                 foreach (var product in CategorizedProductsUC.selectedProductList)
                 {
-                    // Append product information to the cartInfo string
                     cartInfo += $"Product ID: {product.Item1}\n";
                     cartInfo += $"Product Name: {product.Item2}\n";
                     cartInfo += $"Category: {product.Item3}\n";
@@ -52,17 +49,20 @@ namespace project10
                     cartInfo += $"Selected Quantity: {product.Item5}\n";
                     cartInfo += $"Price: {product.Item6}\n";
                     cartInfo += $"Individual Cost: {product.Item7}\n\n";
+
+                    totalCost+= product.Item7;
                 }
 
-                // Display the cart information in a message box
-                MessageBox.Show(cartInfo, "Cart Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                PrintDialogUC printDialog = new PrintDialogUC(cartInfo,totalCost);
+                printDialog.ShowDialog();
             }
             else
             {
-                // If no products are selected, display a message
                 MessageBox.Show("Your cart is empty.", "Cart Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+
 
 
         private void BrakingSystemButton_Click(object sender, EventArgs e)

@@ -12,9 +12,11 @@ namespace project10
 {
     public partial class FormManager : Form
     {
-        public FormManager()
+        public FormManager(string uname)
         {
+            
             InitializeComponent();
+            userNameLabel.Text = uname;
         }
 
         private void Form2_Load(object sender, EventArgs e)

@@ -46,19 +46,19 @@ namespace project10
 
                         if (userType == "Admin")
                         {
-                            FormAdmin f2 = new FormAdmin();
+                            FormAdmin f2 = new FormAdmin(textBox1.Text);
                             f2.Show();
                             this.Hide();
                         }
                         else if (userType == "Manager")
                         {
-                            FormManager f3 = new FormManager();
+                            FormManager f3 = new FormManager(textBox1.Text);
                             f3.Show();
                             this.Hide();
                         }
                         else if (userType == "Salesman")
                         {
-                            FormSalesMan salesman = new FormSalesMan();
+                            FormSalesMan salesman = new FormSalesMan(textBox1.Text);
                             salesman.Show();
                             this.Hide();
                         }

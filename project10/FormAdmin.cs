@@ -12,9 +12,12 @@ namespace project10
 {
     public partial class FormAdmin : Form
     {
-        public FormAdmin()
+        public FormAdmin(string un)
         {
+            //MessageBox.Show(un);
+            
             InitializeComponent();
+            userNameLabel.Text = un;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -72,6 +75,11 @@ namespace project10
             bodyPanel.Controls.Clear();
             AllUsersUC allUserUC = new AllUsersUC();
             bodyPanel.Controls.Add(allUserUC);
+        }
+
+        private void userNameLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
